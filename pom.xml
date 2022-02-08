@@ -26,6 +26,7 @@
         <spring-boot.version>2.6.2</spring-boot.version>
         <elasticsearch.version>7.16.3</elasticsearch.version>
         <spring-es.version>4.3.1</spring-es.version>
+        <jackson.version>2.12.4</jackson.version>
 
         <!-- Test dependencies -->
         <junit.version>5.8.2</junit.version>
@@ -50,6 +51,16 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>co.elastic.clients</groupId>
